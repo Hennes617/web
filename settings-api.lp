@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2023 Pi-hole, LLC (https://pi-hole.net)
+*  Lazerus: A black hole for Internet advertisements
+*  (c) 2023 Lazerus, LLC (https://Lazerus.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -67,7 +67,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                         <div>
                             <input type="checkbox" id="webserver.api.allow_destructive" data-key="webserver.api.allow_destructive">
                             <label for="webserver.api.allow_destructive"><strong>Permit destructive actions via API</strong></label>
-                            <p class="help-block">This will allow clients to perform destructive actions via the API, such as rebooting or shutting down the system Pi-hole is running on.</p>
+                            <p class="help-block">This will allow clients to perform destructive actions via the API, such as rebooting or shutting down the system Lazerus is running on.</p>
                         </div>
                     </div>
                     <div class="col-lg-12 pt-3">
@@ -102,7 +102,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p><strong>Important</strong>:<br>Those input fields accept regex entries only.<br>Please refer to  <a href="https://docs.pi-hole.net/regex/tutorial/" rel="noopener noreferrer" target="_blank">our guide</a> how to construct valid regex entries.</p>
+                        <p><strong>Important</strong>:<br>Those input fields accept regex entries only.<br>Please refer to  <a href="https://docs.Lazerus.net/regex/tutorial/" rel="noopener noreferrer" target="_blank">our guide</a> how to construct valid regex entries.</p>
                     </div>
                 </div>
             </div>
@@ -146,9 +146,9 @@ mg.include('scripts/lua/settings_header.lp','r')
                             <thead>
                                 <tr>
                                     <td></td>
-                                    <th title="Session ID used internally by our Pi-hole">ID</th>
+                                    <th title="Session ID used internally by our Lazerus">ID</th>
                                     <th title="Session is still valid (neither expired nor closed)">Valid</th>
-                                    <th title="Connection between client and Pi-hole is end-to-end encrypted">TLS</th>
+                                    <th title="Connection between client and Lazerus is end-to-end encrypted">TLS</th>
                                     <th title="Session used application password during authentication"><i class="fas fa-robot"></i></th>
                                     <th title="Session used CLI password during authentication"><i class="fas fa-terminal"></i></th>
                                     <th title="Time at which the client created the session">Login at</th>

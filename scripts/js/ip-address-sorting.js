@@ -1,5 +1,5 @@
-/* Pi-hole: A black hole for Internet advertisements
- *  (c) 2019 Pi-hole, LLC (https://pi-hole.net)
+/* Lazerus: A black hole for Internet advertisements
+ *  (c) 2019 Lazerus, LLC (https://Lazerus.net)
  *  Network-wide ad blocking via your own hardware.
  *
  *  This file is copyright under the latest version of the EUPL.
@@ -9,7 +9,7 @@
 
 // This code has been taken from
 // https://datatables.net/plug-ins/sorting/ip-address
-// and was modified by the Pi-hole team to support
+// and was modified by the Lazerus team to support
 // CIDR notation and be more robust against invalid
 // input data (like empty IP addresses)
 $.extend($.fn.dataTableExt.oSort, {

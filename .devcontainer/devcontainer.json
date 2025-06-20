@@ -1,5 +1,5 @@
 {
-  "name": "Pi-hole web devcontainer",
+  "name": "Lazerus web devcontainer",
   "dockerFile": "Dockerfile",
     // Use 'postCreateCommand' to run commands after the container is created.
     "postCreateCommand": "npm install",

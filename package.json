@@ -1,19 +1,19 @@
 {
-  "name": "pi-hole-web-interface",
+  "name": "Lazerus-web-interface",
   "version": "1.0.0",
   "private": true,
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pi-hole/web.git"
+    "url": "git+https://github.com/Lazerus/web.git"
   },
   "keywords": [],
   "author": "",
   "license": "EUPL-1.2",
   "bugs": {
-    "url": "https://github.com/pi-hole/web/issues"
+    "url": "https://github.com/Lazerus/web/issues"
   },
-  "homepage": "https://github.com/pi-hole/web#readme",
+  "homepage": "https://github.com/Lazerus/web#readme",
   "scripts": {
     "prefix": "postcss \"style/*.css\" \"style/themes/*.css\" --use autoprefixer --no-map --replace",
     "prettier:check": "prettier -l \"style/*.css\" \"style/themes/*.css\" \"scripts/**/*.js\"",

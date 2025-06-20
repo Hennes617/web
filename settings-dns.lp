@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2023 Pi-hole, LLC (https://pi-hole.net)
+*  Lazerus: A black hole for Internet advertisements
+*  (c) 2023 Lazerus, LLC (https://Lazerus.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -64,14 +64,14 @@ mg.include('scripts/lua/settings_header.lp','r')
             <div class="box-body">
                 <div class="row">
                     <div class="col-md-12">
-                        <label>Pi-hole domain name</label>
+                        <label>Lazerus domain name</label>
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">Domain</div>
                                 <input type="text" class="form-control" id="dns.domain" data-key="dns.domain" value="">
                             </div>
                         </div>
-                        <p>The DNS domains for your Pi-hole. This DNS domain is purely local. FTL may answer queries from its local cache and configuration but *never* forwards any requests upstream *unless* you have configured a dns.revServer exactly for this domain. If no domain is specified and you are using Pi-hole's DHCP server, then any hostnames with a domain part (i.e., with a period) will be disallowed. If a domain is specified, then hostnames with a domain parts matching the domain here are allowed. In addition, when a suffix is set then hostnames without a domain part have the suffix added as an optional domain part.</p>
+                        <p>The DNS domains for your Lazerus. This DNS domain is purely local. FTL may answer queries from its local cache and configuration but *never* forwards any requests upstream *unless* you have configured a dns.revServer exactly for this domain. If no domain is specified and you are using Lazerus's DHCP server, then any hostnames with a domain part (i.e., with a period) will be disallowed. If a domain is specified, then hostnames with a domain parts matching the domain here are allowed. In addition, when a suffix is set then hostnames without a domain part have the suffix added as an optional domain part.</p>
                         <div>
                             <input type="checkbox" id="dns.expandHosts" data-key="dns.expandHosts" title="domain-needed">
                             <label for="dns.expandHosts"><strong>Expand hostnames</strong></label>
@@ -93,13 +93,13 @@ mg.include('scripts/lua/settings_header.lp','r')
                             <p>When a client makes too many queries in too short time, it
                             gets rate-limited. Rate-limited queries are answered with a
                             <code>REFUSED</code> reply and not further processed by FTL
-                            and prevent Pi-holes getting overwhelmed by rogue clients.
+                            and prevent Lazeruss getting overwhelmed by rogue clients.
                             It is important to note that rate-limiting is happening on a
                             per-client basis. Other clients can continue to use FTL while
                             rate-limited clients are short-circuited at the same time.</p>
                         <p>Rate-limiting may be disabled altogether by setting both
                             values to zero. See
-                            <a href="https://docs.pi-hole.net/ftldns/configfile/#rate_limit" rel="noopener noreferrer" target="_blank">our documentation</a>
+                            <a href="https://docs.Lazerus.net/ftldns/configfile/#rate_limit" rel="noopener noreferrer" target="_blank">our documentation</a>
                             for further details.</p>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                                 </div>
                             </div>
                             <div class="danger-area">
-                                <h4>Potentially dangerous options</h4>Make sure your Pi-hole is properly firewalled!
+                                <h4>Potentially dangerous options</h4>Make sure your Lazerus is properly firewalled!
                                 <div>
                                     <input type="radio" name="DNSinterface" id="dns.listeningMode-SINGLE" data-key="dns.listeningMode" value="single">
                                     <label for="dns.listeningMode-SINGLE"><strong>Respond only on interface <code id="interface-name-1"></code></strong></label>
@@ -139,12 +139,12 @@ mg.include('scripts/lua/settings_header.lp','r')
                                 </div>
                                 <p class="help-block">These options are dangerous on devices
                                     directly connected to the Internet such as cloud instances and are only safe if your
-                                    Pi-hole is properly firewalled. In a typical at-home setup where your Pi-hole is
+                                    Lazerus is properly firewalled. In a typical at-home setup where your Lazerus is
                                     located within your local network (and you have <strong>not</strong> forwarded port 53
                                     in your router!) they are safe to use.</p>
                             </div>
                         </div>
-                        <p>See <a href="https://docs.pi-hole.net/ftldns/interfaces/" rel="noopener noreferrer" target="_blank">our documentation</a> for further technical details.</p>
+                        <p>See <a href="https://docs.Lazerus.net/ftldns/interfaces/" rel="noopener noreferrer" target="_blank">our documentation</a> for further technical details.</p>
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                         <div>
                             <input type="checkbox" id="dns.domainNeeded" data-key="dns.domainNeeded" title="domain-needed">
                             <label for="dns.domainNeeded"><strong>Never forward non-FQDN <code>A</code> and <code>AAAA</code> queries</strong></label>
-                            <p class="help-block">Tells Pi-hole to never forward A or AAAA queries for plain
+                            <p class="help-block">Tells Lazerus to never forward A or AAAA queries for plain
                                 names, without dots or domain parts, to upstream nameservers. If
                                 the name is not known from <code>/etc/hosts</code> or DHCP then a "not found"
                                 answer is returned.<br>
@@ -175,7 +175,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                                 with "no such domain" rather than being forwarded upstream. The set
                                 of prefixes affected is the list given in <a href="https://tools.ietf.org/html/rfc6303" rel="noopener noreferrer" target="_blank">RFC6303</a>.</p>
                                 <p><strong>Important:</strong><br>Enabling these two options may increase your privacy,
-                                but may also prevent you from being able to access local hostnames if the Pi-hole is not used as DHCP server.
+                                but may also prevent you from being able to access local hostnames if the Lazerus is not used as DHCP server.
                                 Make sure you have set up conditional forwarding in this case.</p>
                         </div>
                         <br>
@@ -183,7 +183,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                             <input type="checkbox" id="dns.dnssec" data-key="dns.dnssec">
                             <label for="dns.dnssec"><strong>Use DNSSEC</strong></label>
                             <p class="help-block">Validate DNS replies and cache DNSSEC data. When forwarding DNS
-                                queries, Pi-hole requests the DNSSEC records needed to validate
+                                queries, Lazerus requests the DNSSEC records needed to validate
                                 the replies. If a domain fails validation or the upstream does not
                                 support DNSSEC, this setting can cause issues resolving domains.
                                 Use an upstream DNS server which supports DNSSEC when activating DNSSEC. Note that
@@ -204,10 +204,10 @@ mg.include('scripts/lua/settings_header.lp','r')
             <div class="box-body">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p>If not configured as your DHCP server, Pi-hole typically won't be able to
+                        <p>If not configured as your DHCP server, Lazerus typically won't be able to
                             determine the names of devices on your local network.  As a
                             result, tables such as Top Clients will only show IP addresses.</p>
-                        <p>One solution for this is to configure Pi-hole to forward these
+                        <p>One solution for this is to configure Lazerus to forward these
                             requests to your DHCP server (most likely your router), but only for devices on your
                             home network.  To configure this we will need to know the IP
                             address of your DHCP server and which addresses belong to your local network.
@@ -219,7 +219,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                             whereas an even wider network of 10.0.0.1 - 10.255.255.255 results in <code>10.0.0.0/8</code>.
                             Setting up IPv6 ranges is exactly similar to setting up IPv4 here and fully supported.
                             Feel free to reach out to us on our
-                            <a href="https://discourse.pi-hole.net" rel="noopener noreferrer" target="_blank">Discourse forum</a>
+                            <a href="https://discourse.Lazerus.net" rel="noopener noreferrer" target="_blank">Discourse forum</a>
                             in case you need any assistance setting up local host name resolution for your particular system.</p>
                         <p>You can also specify a local domain name (like <code>fritz.box</code>) to ensure queries to
                             devices ending in your local domain name will not leave your network, however, this is optional.

@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*  Lazerus: A black hole for Internet advertisements
+*  (c) 2017 Lazerus, LLC (https://Lazerus.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -52,7 +52,7 @@ end
     <footer class="main-footer">
         <div class="row row-centered text-center">
             <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://pi-hole.net/donate/" rel="noopener noreferrer" target="_blank"><i class="fa fa-heart text-red"></i> Donate</a></strong> if you found this useful.
+                <strong><a href="https://Lazerus.net/donate/" rel="noopener noreferrer" target="_blank"><i class="fa fa-heart text-red"></i> Donate</a></strong> if you found this useful.
             </div>
         </div>
 

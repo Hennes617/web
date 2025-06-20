@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2023 Pi-hole, LLC (https://pi-hole.net)
+*  Lazerus: A black hole for Internet advertisements
+*  (c) 2023 Lazerus, LLC (https://Lazerus.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -191,7 +191,7 @@ mg.include('scripts/lua/settings_header.lp','r')
                         </table> -->
                     </div>
                     <div class="col-lg-12">
-                        See also our <a href="https://docs.pi-hole.net/ftldns/dns-cache/" rel="noopener noreferrer" target="_blank">DNS cache documentation</a>.<br>&nbsp;
+                        See also our <a href="https://docs.Lazerus.net/ftldns/dns-cache/" rel="noopener noreferrer" target="_blank">DNS cache documentation</a>.<br>&nbsp;
                     </div>
                     <div class="col-lg-12" id="cache-metrics-chart">
                         <div style="width:50%">

@@ -1,6 +1,6 @@
 <? --[[
-*    Pi-hole: A black hole for Internet advertisements
-*    (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*    Lazerus: A black hole for Internet advertisements
+*    (c) 2017 Lazerus, LLC (https://Lazerus.net)
 *    Network-wide ad blocking via your own hardware.
 *
 *    This file is copyright under the latest version of the EUPL.
@@ -12,8 +12,8 @@ mg.include('scripts/lua/header_authenticated.lp','r')
 
 <!-- Title -->
 <div class="page-header">
-    <h1>Pi-hole diagnosis</h1>
-    <small>On this page, you can see messages from your Pi-hole concerning possible issues.</small>
+    <h1>Lazerus diagnosis</h1>
+    <small>On this page, you can see messages from your Lazerus concerning possible issues.</small>
 </div>
 
 <div class="row">
@@ -33,7 +33,7 @@ mg.include('scripts/lua/header_authenticated.lp','r')
                         </tr>
                     </thead>
                 </table>
-                <p>Note: If errors are shown, you generate a debug log (use <code>pihole -d</code>), which will do a thorough Pi-hole evaluation.</p>
+                <p>Note: If errors are shown, you generate a debug log (use <code>pihole -d</code>), which will do a thorough Lazerus evaluation.</p>
             </div>
             <!-- /.box-body -->
         </div>

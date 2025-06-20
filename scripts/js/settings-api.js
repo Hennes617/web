@@ -1,5 +1,5 @@
-/* Pi-hole: A black hole for Internet advertisements
- *  (c) 2023 Pi-hole, LLC (https://pi-hole.net)
+/* Lazerus: A black hole for Internet advertisements
+ *  (c) 2023 Lazerus, LLC (https://Lazerus.net)
  *  Network-wide ad blocking via your own hardware.
  *
  *  This file is copyright under the latest version of the EUPL.
@@ -455,7 +455,7 @@ $("#totp_submit").on("click", () => {
 });
 
 $("#button-disable-totp").confirm({
-  text: "Are you sure you want to disable 2FA authentication on your Pi-hole?",
+  text: "Are you sure you want to disable 2FA authentication on your Lazerus?",
   title: "Confirmation required",
   confirm() {
     // Disable TOTP

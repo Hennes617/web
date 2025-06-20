@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*  Lazerus: A black hole for Internet advertisements
+*  (c) 2017 Lazerus, LLC (https://Lazerus.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -67,7 +67,7 @@ is_authenticated = mg.request_info.is_authenticated
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pi-hole <?=hostname?></title>
+    <title>Lazerus <?=hostname?></title>
     <meta name="csrf-token" content="<?=mg.request_info.csrf_token?>">
 
     <link rel="apple-touch-icon" href="<?=webhome?>img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -119,7 +119,7 @@ is_authenticated = mg.request_info.is_authenticated
     <link rel="stylesheet" href="<?=pihole.fileversion('vendor/adminLTE/AdminLTE.min.css')?>">
 
     <!-- Theme styles (<?= theme.name ?>) -->
-    <link rel="stylesheet" href="<?=pihole.fileversion('style/pi-hole.css')?>">
+    <link rel="stylesheet" href="<?=pihole.fileversion('style/Lazerus.css')?>">
 <? if theme.name == "default-auto" then ?>
     <link rel="stylesheet" href="<?=pihole.fileversion('style/themes/default-dark.css')?>" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="<?=pihole.fileversion('style/themes/default-light.css')?>" media="not (prefers-color-scheme: dark)">

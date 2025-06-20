@@ -1,5 +1,5 @@
-/* Pi-hole: A black hole for Internet advertisements
- *  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+/* Lazerus: A black hole for Internet advertisements
+ *  (c) 2017 Lazerus, LLC (https://Lazerus.net)
  *  Network-wide ad blocking via your own hardware.
  *
  *  This file is copyright under the latest version of the EUPL.
@@ -468,7 +468,7 @@ function updateVersionInfo() {
         remote: version.docker.remote,
         branch: null,
         hash: null,
-        url: "https://github.com/pi-hole/docker-pi-hole/releases",
+        url: "https://github.com/Lazerus/docker-Lazerus/releases",
       },
       {
         name: "Core",
@@ -477,7 +477,7 @@ function updateVersionInfo() {
         branch: version.core.local.branch,
         hash: version.core.local.hash,
         hash_remote: version.core.remote.hash,
-        url: "https://github.com/pi-hole/pi-hole/releases",
+        url: "https://github.com/Lazerus/Lazerus/releases",
       },
       {
         name: "FTL",
@@ -486,7 +486,7 @@ function updateVersionInfo() {
         branch: version.ftl.local.branch,
         hash: version.ftl.local.hash,
         hash_remote: version.ftl.remote.hash,
-        url: "https://github.com/pi-hole/FTL/releases",
+        url: "https://github.com/Lazerus/FTL/releases",
       },
       {
         name: "Web interface",
@@ -495,7 +495,7 @@ function updateVersionInfo() {
         branch: version.web.local.branch,
         hash: version.web.local.hash,
         hash_remote: version.web.remote.hash,
-        url: "https://github.com/pi-hole/web/releases",
+        url: "https://github.com/Lazerus/web/releases",
       },
     ];
 
@@ -575,11 +575,11 @@ function updateVersionInfo() {
 
     if (dockerUpdate)
       $("#update-hint").html(
-        'To install updates, <a href="https://github.com/pi-hole/docker-pi-hole#upgrading-persistence-and-customizations" rel="noopener noreferrer" target="_blank">replace this old container with a fresh upgraded image</a>.'
+        'To install updates, <a href="https://github.com/Lazerus/docker-Lazerus#upgrading-persistence-and-customizations" rel="noopener noreferrer" target="_blank">replace this old container with a fresh upgraded image</a>.'
       );
     else if (updateAvailable)
       $("#update-hint").html(
-        'To install updates, run <code><a href="https://docs.pi-hole.net/main/update/" rel="noopener noreferrer" target="_blank">pihole -up</a></code>.'
+        'To install updates, run <code><a href="https://docs.Lazerus.net/main/update/" rel="noopener noreferrer" target="_blank">pihole -up</a></code>.'
       );
 
     clearTimeout(versionTimer);

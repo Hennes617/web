@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2024 Pi-hole, LLC (https://pi-hole.net)
+*  Lazerus: A black hole for Internet advertisements
+*  (c) 2024 Lazerus, LLC (https://Lazerus.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -11,7 +11,7 @@ mg.include('scripts/lua/header_authenticated.lp','r')
 ?>
 <!-- Title -->
 <div class="page-header">
-    <h1>Pi-hole interface overview</h1>
+    <h1>Lazerus interface overview</h1>
 </div>
 <div class="row">
     <div class="col-md-12">

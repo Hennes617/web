@@ -1,7 +1,7 @@
 <?
 --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+*  Lazerus: A black hole for Internet advertisements
+*  (c) 2017 Lazerus, LLC (https://Lazerus.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -67,7 +67,7 @@ mg.include('header.lp','r')
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img class="logo-img" src="<?=webhome?>img/logo.svg" alt="Pi-hole Logo" width="50" height="50">
+                                <img class="logo-img" src="<?=webhome?>img/logo.svg" alt="Lazerus Logo" width="50" height="50">
                                 <p>
                                     Open Source Ad Blocker
                                 </p>
@@ -76,14 +76,14 @@ mg.include('header.lp','r')
                             <li class="user-body" id="advanced-info" style="display:none;"></li>
                             <!-- Menu Footer -->
                             <li class="user-footer">
-                                <a class="btn-link" href="https://pi-hole.net/" rel="noopener noreferrer" target="_blank">
+                                <a class="btn-link" href="https://Lazerus.net/" rel="noopener noreferrer" target="_blank">
                                     <? mg.include('../../img/logo-bw.svg', 'r') ?>
-                                    Pi-hole Website
+                                    Lazerus Website
                                 </a>
-                                <a class="btn-link" href="https://docs.pi-hole.net/" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fa-solid fa-circle-question"></i> Documentation</a>
-                                <a class="btn-link" href="https://discourse.pi-hole.net/" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fab fa-discourse"></i> Pi-hole Discourse</a>
-                                <a class="btn-link" href="https://github.com/pi-hole" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fab fa-github"></i> GitHub</a>
-                                <a class="btn-link" href="https://discourse.pi-hole.net/c/announcements/5" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fa-solid fa-rocket"></i> Pi-hole Releases</a>
+                                <a class="btn-link" href="https://docs.Lazerus.net/" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fa-solid fa-circle-question"></i> Documentation</a>
+                                <a class="btn-link" href="https://discourse.Lazerus.net/" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fab fa-discourse"></i> Lazerus Discourse</a>
+                                <a class="btn-link" href="https://github.com/Lazerus" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fab fa-github"></i> GitHub</a>
+                                <a class="btn-link" href="https://discourse.Lazerus.net/c/announcements/5" rel="noopener noreferrer" target="_blank"><i class="fa-fw menu-icon fa-solid fa-rocket"></i> Lazerus Releases</a>
                                 <? if pihole.needLogin() then ?>
                                 <a class="btn-link" href="#" id="logout-button"><i class="fa-fw menu-icon fa-solid fa-arrow-right-from-bracket"></i> Log out</a>
                                 <? end ?>

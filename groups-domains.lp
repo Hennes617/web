@@ -1,6 +1,6 @@
 <? --[[
-*  Pi-hole: A black hole for Internet advertisements
-*  (c) 2019 Pi-hole, LLC (https://pi-hole.net)
+*  Lazerus: A black hole for Internet advertisements
+*  (c) 2019 Lazerus, LLC (https://Lazerus.net)
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
@@ -75,7 +75,7 @@ mg.include('scripts/lua/header_authenticated.lp','r')
                                     </div>
                                     <div class="form-group">
                                         <strong>Hint:</strong> Need help to write a proper RegEx rule? Have a look at our online
-                                        <a href="https://docs.pi-hole.net/ftldns/regex/tutorial" rel="noopener noreferrer" target="_blank">
+                                        <a href="https://docs.Lazerus.net/ftldns/regex/tutorial" rel="noopener noreferrer" target="_blank">
                                             regular expressions tutorial</a>.
                                     </div>
                                 </div>

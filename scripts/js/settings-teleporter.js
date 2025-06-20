@@ -1,5 +1,5 @@
-/* Pi-hole: A black hole for Internet advertisements
- *  (c) 2023 Pi-hole, LLC (https://pi-hole.net)
+/* Lazerus: A black hole for Internet advertisements
+ *  (c) 2023 Lazerus, LLC (https://Lazerus.net)
  *  Network-wide ad blocking via your own hardware.
  *
  *  This file is copyright under the latest version of the EUPL.
@@ -14,7 +14,7 @@ document.getElementById("submit-import").addEventListener("click", () => {
   importZIP();
 });
 
-// Upload file to Pi-hole
+// Upload file to Lazerus
 function importZIP() {
   const file = document.getElementById("file").files[0];
   if (file === undefined) {
